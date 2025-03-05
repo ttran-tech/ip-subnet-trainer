@@ -23,16 +23,16 @@ IP Subnet Trainer is an interactive Python tool designed to help users master su
 
 - Question/Challenge/Quiz:
     - [ ] Randomized generate an IP address from either class A, B, or C.
-    - Generating the answer:
-        - Identify the Network and Host portion of the IP
-        - Subnet Mask
-        - Block Size
-        - Network & Broadcast Addresses
-        - Usage IP Range
+    - [ ] Generating the answer:
+        - [ ] Identify the Network and Host portion of the IP
+        - [ ] Subnet Mask
+        - [ ] Block Size
+        - [ ] Network & Broadcast Addresses
+        - [ ] Usage IP Range
 
 - User Interaction:
     - CLI:
-        - Input prompt for user's answers
+        - [ ] Input prompt for user's answers
 
     - GUI:
         - [WIP]
