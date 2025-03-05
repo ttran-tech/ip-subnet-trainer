@@ -3,6 +3,7 @@
 import unittest
 from src.utils import *
 from tests.test_utils import TestUtils
+from tests.test_generator import TestGenerator
 
 if __name__ == "__main__":
     unittest.main()
