@@ -9,9 +9,3 @@ def binary_to_decimal(binary: str) -> int:
         decimal += (pow(2, n) * int(digit))
         n += 1
     return int(decimal)
-
-if __name__ == "__main__":
-    binary = "11000000"
-    decimal = binary_to_decimal(binary=binary)
-
-    print(f"{binary} = {decimal}")
