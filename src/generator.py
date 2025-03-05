@@ -18,3 +18,8 @@ def generate_ip() -> str:
         Class C (192-223)
     """
     return f"{ _generate_first_octet(1, 223, 127) }.{ random.randint(1, 255) }.{ random.randint(1, 255) }.{ random.randint(1, 255) }"
+
+
+def generate_cidr() -> str:
+    """Generate a random CIDR between 8 and 30"""
+    return f"/{random.randint(1, 30)}"
