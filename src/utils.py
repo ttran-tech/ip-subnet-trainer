@@ -1,4 +1,5 @@
-#/bin/usr/python
+# This file contains the utility functions that used
+# in the main source code.
 from math import pow
 
 
