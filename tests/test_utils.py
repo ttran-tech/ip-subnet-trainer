@@ -1,4 +1,4 @@
-# This file contains the unit test for utility functions in utils.py
+# This file contains the unit test for utility functions from utils.py
 from src.utils import *
 import unittest
 
