@@ -1,7 +1,7 @@
 #/bin/usr/python
 import unittest
-
 from trainer.utils import *
+
 
 class TestUtils(unittest.TestCase):
     def test_binary_to_decimal(self):
