@@ -22,4 +22,4 @@ def generate_ip() -> str:
 
 def generate_cidr() -> str:
     """Generate a random CIDR between 8 and 30"""
-    return f"/{random.randint(1, 30)}"
+    return f"{random.randint(1, 30)}"

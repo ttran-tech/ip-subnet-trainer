@@ -10,5 +10,5 @@ class TestGenerator(unittest.TestCase):
 
     def test_generate_cidr(self):
         cidr = generate_cidr()
-        pattern = r'^/(\d){1,2}$'
+        pattern = r'^(\d){1,2}$'
         self.assertTrue(bool(re.match(pattern, cidr)), "Invalid CIDR suffix.")
