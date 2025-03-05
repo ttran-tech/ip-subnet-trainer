@@ -6,4 +6,4 @@ from tests.test_utils import TestUtils
 from tests.test_generator import TestGenerator
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)
