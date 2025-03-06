@@ -25,9 +25,9 @@ IP Subnet Trainer is an interactive Python tool designed to help users master su
     - [x] Randomized generate an IP address from either class A, B, or C.
     - [x] Randomize generate CIDR suffix
     - [ ] Generating the answer:
-        - [ ] Identify the Network and Host portion of the IP
-        - [ ] Subnet Mask
+        - [x] Subnet Mask
         - [ ] Block Size
+        - [ ] Identify the Network and Host portion of the IP
         - [ ] Network & Broadcast Addresses
         - [ ] Usage IP Range
 
