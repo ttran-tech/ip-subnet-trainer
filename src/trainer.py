@@ -27,5 +27,4 @@ def generate_answer(challenge:str) -> dict:
 if __name__ == '__main__':
     challenge = generate_challenge()
     answer = generate_answer(challenge=challenge)
-
     print(answer)
