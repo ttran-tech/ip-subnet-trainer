@@ -1,5 +1,6 @@
 # This files contains the functions that calculate and generate the answer
 # based on the IP and CIDR from the generator.
+from utils import binary_to_decimal
 
 def calculate_subnet_mask(cird:str) -> str:
     """Calculate subnet mask from a given CIDR"""
@@ -7,8 +8,6 @@ def calculate_subnet_mask(cird:str) -> str:
     octet = 1   # first octet
     full_octet = int(int(cird) / 8)
     extra_bit = int(int(cird) % 8)
-
-    print(f"binary_subnet before {binary_subnet}")
 
     for i in range(full_octet):
         binary_subnet[octet] = '11111111'
@@ -18,12 +17,15 @@ def calculate_subnet_mask(cird:str) -> str:
         for i in range(extra_bit):
             binary_subnet[octet] = binary_subnet[octet][:i] + '1' + binary_subnet[octet][i+1:]
 
-    print(f"binary_subnet after {binary_subnet}")
-    print()
+    return ".".join([
+        str(binary_to_decimal(value)) 
+        for value in binary_subnet.values()
+    ])
 
-if __name__ == "__main__":
-    subnet = calculate_subnet_mask(8)
-    subnet = calculate_subnet_mask(12)
-    subnet = calculate_subnet_mask(20)
-    subnet = calculate_subnet_mask(28)
-    subnet = calculate_subnet_mask(30)
+
+# if __name__ == "__main__":
+#     subnet = calculate_subnet_mask(8)
+#     subnet = calculate_subnet_mask(12)
+#     subnet = calculate_subnet_mask(20)
+#     subnet = calculate_subnet_mask(28)
+#     subnet = calculate_subnet_mask(30)
