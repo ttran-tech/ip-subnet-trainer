@@ -1,6 +1,6 @@
 # This files contains the functions that calculate and generate the answer
 # based on the IP and CIDR from the generator.
-from utils import binary_to_decimal
+from src.utils import binary_to_decimal
 
 def calculate_subnet_mask(cird:str) -> list:
     """Calculate subnet mask from a given CIDR"""
