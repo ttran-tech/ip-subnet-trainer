@@ -1,6 +1,6 @@
 # IP Subnet Trainer
 
-IP Subnet Trainer is an interactive Python tool designed to help users master subnetting calculations through hands-on practice. The tool randomly generates IP address with CIDR notation (e.g., 192.168.0.0/16) and challenges the users to identify or caculate:
+IP Subnet Trainer is an interactive Python tool designed to help users master subnetting calculations through hands-on practice. The tool randomly generates IP address with CIDR notation (e.g., 192.168.0.0/16) and challenges the users to identify or calculate:
 
 :heavy_check_mark: Network Portion
 
