@@ -2,12 +2,15 @@
 # based on the IP and CIDR from the generator.
 from src.utils import binary_to_decimal
 
-def calculate_subnet_mask(cird:str) -> list:
+OCTET_RANGE = 256
+BIT_PER_OCTET = 8
+
+def calculate_subnet_mask(cird:str) -> list[int]:
     """Calculate subnet mask from a given CIDR"""
     binary_subnet = {1:'00000000', 2:'00000000', 3:'00000000', 4:'00000000'}
     octet = 1   # first octet
-    full_octet = int(int(cird) / 8)
-    extra_bit = int(int(cird) % 8)
+    full_octet = int(int(cird) / BIT_PER_OCTET)
+    extra_bit = int(int(cird) % BIT_PER_OCTET)
 
     for i in range(full_octet):
         binary_subnet[octet] = '11111111'
@@ -23,9 +26,7 @@ def calculate_subnet_mask(cird:str) -> list:
     ]
 
 
-# if __name__ == "__main__":
-#     subnet = calculate_subnet_mask(8)
-#     subnet = calculate_subnet_mask(12)
-#     subnet = calculate_subnet_mask(20)
-#     subnet = calculate_subnet_mask(28)
-#     subnet = calculate_subnet_mask(30)
+def calculate_block_size(subnet:list[int]) -> int:
+    for octet in subnet:
+        if octet != OCTET_RANGE:
+            return OCTET_RANGE - octet
