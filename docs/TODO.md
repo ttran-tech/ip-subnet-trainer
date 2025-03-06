@@ -25,11 +25,12 @@ IP Subnet Trainer is an interactive Python tool designed to help users master su
     - [x] Randomized generate an IP address from either class A, B, or C.
     - [x] Randomize generate CIDR suffix
     - [ ] Generating the answer:
-        - [x] Subnet Mask
-        - [ ] Block Size
-        - [ ] Identify the Network and Host portion of the IP
-        - [ ] Network & Broadcast Addresses
-        - [ ] Usage IP Range
+        - [x] Calculate Subnet Mask
+        - [ ] Calculate Block Size (Block Size = 256 - last non-255 octet)
+        - [ ] Find Network Address (e.g., 192.168.1.0)
+        - [ ] Find Broadcast Address (e.g., 192.168.1.255)
+        - [ ] Find Usable IP Range
+        - [ ] Subnet Increment Challenge (Find the next subnet in a range)
 
 - User Interaction:
     - CLI:
